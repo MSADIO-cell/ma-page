@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pâtisseries artisanales et douceurs – La Tasse des Cousines</title>
+  <meta name="description" content="Découvrez les pâtisseries artisanales, viennoiseries, cookies et douceurs du monde de La Tasse des Cousines.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Material+Symbols+Outlined&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = { theme: { extend: {
+      colors: { primary: "#500009", pc: "#731018", sec: "#8e4e0e", surf: "#fff8f3", s2: "#fff2e2", s3: "#fcebd7", s4: "#f6e6d2", ink: "#221a0e", mute: "#574140", gold: "#ffab66" },
+      fontFamily: { serif: ["Playfair Display", "serif"], sans: ["Plus Jakarta Sans", "sans-serif"] }
+    } } };
+  </script>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body .font-serif { font-family: "Playfair Display", serif; }
+    .photo-frame { overflow: hidden; border-radius: .75rem; }
+    @media (max-width: 639px) {
+      #site-header header > div > a > span:last-child { white-space: nowrap; }
+      #site-header header > div > a > span:last-child b { font-size: 16px; }
+      #site-header header > div > a > span:last-child small { display: none; }
+    }
+  </style>
+</head>
+<body class="bg-surf text-ink font-sans antialiased">
+  <div id="site-header"></div>
+  <main class="pt-20">
+    <section class="bg-s2">
+      <div class="max-w-7xl mx-auto px-5 md:px-8 py-12 md:py-16">
+        <a href="index.html" class="inline-flex items-center gap-2 text-sm font-semibold text-sec hover:text-primary">
+          <span class="material-symbols-outlined" aria-hidden="true">arrow_back</span> Retour à l’accueil
+        </a>
+        <p class="mt-8 text-sm font-bold uppercase tracking-[.18em] text-sec">La vitrine des cousines</p>
+        <h1 class="font-serif font-bold text-primary mt-2">Des douceurs faites pour être partagées</h1>
+        <p class="mt-4 max-w-2xl text-mute">Des fournées maison, des recettes de famille et des gourmandises venues d’ailleurs : choisissez votre douceur et accompagnez-la de votre boisson préférée.</p>
+      </div>
+    </section>
+
+    <section class="max-w-7xl mx-auto px-5 md:px-8 py-12 md:py-16" aria-labelledby="vitrine-title">
+      <div class="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-3 mb-8">
+        <div>
+          <p class="text-sm font-semibold text-sec">Préparées avec soin, au fil des saisons</p>
+          <h2 id="vitrine-title" class="font-serif text-primary mt-1">Pâtisseries &amp; douceurs</h2>
+        </div>
+        <p class="text-mute">Une sélection artisanale, tendre et généreuse.</p>
+      </div>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+        <article class="card flex flex-col">
+          <div class="photo-frame h-52"><img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&amp;fit=crop&amp;w=900&amp;q=85" alt="Viennoiseries dorées tout juste sorties du four" class="w-full h-full object-cover" loading="lazy"></div>
+          <div class="p-5 flex flex-col flex-1"><div class="flex justify-between gap-3 items-start"><h3 class="font-serif text-primary">Croissant pur beurre</h3><span class="font-bold text-sec whitespace-nowrap">1,60 €</span></div><p class="mt-2 text-mute">Feuilletage croustillant et cœur fondant, roulé et doré chaque matin.</p></div>
+        </article>
+        <article class="card flex flex-col">
+          <div class="photo-frame h-52"><img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&amp;fit=crop&amp;w=900&amp;q=85" alt="Pain et pâtisseries artisanales présentés en boutique" class="w-full h-full object-cover" loading="lazy"></div>
+          <div class="p-5 flex flex-col flex-1"><div class="flex justify-between gap-3 items-start"><h3 class="font-serif text-primary">Scone anglais</h3><span class="font-bold text-sec whitespace-nowrap">2,40 €</span></div><p class="mt-2 text-mute">Moelleux au beurre, à savourer avec confiture et crème.</p></div>
+        </article>
+        <article class="card flex flex-col">
+          <div class="photo-frame h-52"><img src="https://images.unsplash.com/photo-1499636136210-6f4ee915583e?auto=format&amp;fit=crop&amp;w=900&amp;q=85" alt="Cookies maison aux pépites de chocolat" class="w-full h-full object-cover" loading="lazy"></div>
+          <div class="p-5 flex flex-col flex-1"><div class="flex justify-between gap-3 items-start"><h3 class="font-serif text-primary">Cookie chocolat &amp; pécan</h3><span class="font-bold text-sec whitespace-nowrap">2,60 €</span></div><p class="mt-2 text-mute">Bords dorés, cœur tendre, chocolat noir et noix de pécan.</p></div>
+        </article>
+        <article class="card flex flex-col">
+          <div class="photo-frame h-52"><img src="https://images.unsplash.com/photo-1486427944299-d1955d23e34d?auto=format&amp;fit=crop&amp;w=900&amp;q=85" alt="Petits gâteaux décorés pour une pause gourmande" class="w-full h-full object-cover" loading="lazy"></div>
+          <div class="p-5 flex flex-col flex-1"><div class="flex justify-between gap-3 items-start"><h3 class="font-serif text-primary">Cupcake du jour</h3><span class="font-bold text-sec whitespace-nowrap">3,20 €</span></div><p class="mt-2 text-mute">Un gâteau léger et son glaçage maison, renouvelé selon l’inspiration.</p></div>
+        </article>
+        <article class="card flex flex-col">
+          <div class="photo-frame h-52"><img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&amp;fit=crop&amp;w=900&amp;q=85" alt="Gâteau au chocolat préparé pour être partagé" class="w-full h-full object-cover" loading="lazy"></div>
+          <div class="p-5 flex flex-col flex-1"><div class="flex justify-between gap-3 items-start"><h3 class="font-serif text-primary">Gâteau chocolat maison</h3><span class="font-bold text-sec whitespace-nowrap">4,20 €</span></div><p class="mt-2 text-mute">Une part généreuse, chocolat noir et texture délicatement fondante.</p></div>
+        </article>
+        <article class="card flex flex-col">
+          <div class="photo-frame h-52"><img src="https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?auto=format&amp;fit=crop&amp;w=900&amp;q=85" alt="Pâtisserie fine garnie de crème et de fruits" class="w-full h-full object-cover" loading="lazy"></div>
+          <div class="p-5 flex flex-col flex-1"><div class="flex justify-between gap-3 items-start"><h3 class="font-serif text-primary">Tartelette aux fruits</h3><span class="font-bold text-sec whitespace-nowrap">3,80 €</span></div><p class="mt-2 text-mute">Pâte sablée, crème légère et fruits frais selon la saison.</p></div>
+        </article>
+        <article class="card flex flex-col">
+          <div class="photo-frame h-52"><img src="https://images.unsplash.com/photo-1509365465985-25d11c17e812?auto=format&amp;fit=crop&amp;w=900&amp;q=85" alt="Assortiment de pâtisseries dorées et délicates" class="w-full h-full object-cover" loading="lazy"></div>
+          <div class="p-5 flex flex-col flex-1"><div class="flex justify-between gap-3 items-start"><h3 class="font-serif text-primary">Baklava pistache &amp; miel</h3><span class="font-bold text-sec whitespace-nowrap">2,80 €</span></div><p class="mt-2 text-mute">Feuilletage fin, éclats de pistache et miel parfumé.</p></div>
+        </article>
+        <article class="card flex flex-col">
+          <div class="photo-frame h-52"><img src="https://images.unsplash.com/photo-1519869325930-281384150729?auto=format&amp;fit=crop&amp;w=900&amp;q=85" alt="Petite douceur pâtissière soigneusement dressée" class="w-full h-full object-cover" loading="lazy"></div>
+          <div class="p-5 flex flex-col flex-1"><div class="flex justify-between gap-3 items-start"><h3 class="font-serif text-primary">Corne de gazelle</h3><span class="font-bold text-sec whitespace-nowrap">2,20 €</span></div><p class="mt-2 text-mute">Pâte délicate, amande et fleur d’oranger, selon la recette des cousines.</p></div>
+        </article>
+      </div>
+      <p class="mt-8 text-sm text-mute">Les pâtisseries et prix sont présentés à titre indicatif dans le cadre du projet pédagogique.</p>
+    </section>
+  </main>
+  <div id="site-footer"></div>
+  <script src="script.js"></script>
+  <script>
+    (() => {
+      const destinations = {
+        "Notre salon": "salon.html",
+        "Notre vitrine": "vitrine.html",
+        "Nos boissons": "boissons.html",
+        "Nos recettes": "recette.html"
+      };
+      document.querySelectorAll("#site-header nav a").forEach(link => {
+        const destination = destinations[link.textContent.trim()];
+        if (destination) link.setAttribute("href", destination);
+      });
+    })();
+  </script>
+</body>
+</html>

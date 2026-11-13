@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Thés, cafés et boissons du monde – La Tasse des Cousines</title>
+  <meta name="description" content="Découvrez les thés du monde, cafés, chocolats chauds, jus frais et boissons signatures de La Tasse des Cousines.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Material+Symbols+Outlined&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = { theme: { extend: {
+      colors: { primary: "#500009", pc: "#731018", sec: "#8e4e0e", surf: "#fff8f3", s2: "#fff2e2", s3: "#fcebd7", s4: "#f6e6d2", ink: "#221a0e", mute: "#574140", gold: "#ffab66" },
+      fontFamily: { serif: ["Playfair Display", "serif"], sans: ["Plus Jakarta Sans", "sans-serif"] }
+    } } };
+  </script>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body .font-serif { font-family: "Playfair Display", serif; }
+    .photo-frame { overflow: hidden; border-radius: .75rem; }
+    @media (max-width: 639px) {
+      #site-header header > div > a > span:last-child { white-space: nowrap; }
+      #site-header header > div > a > span:last-child b { font-size: 16px; }
+      #site-header header > div > a > span:last-child small { display: none; }
+    }
+  </style>
+</head>
+<body class="bg-surf text-ink font-sans antialiased">
+  <div id="site-header"></div>
+  <main class="pt-20">
+    <section class="bg-s2">
+      <div class="max-w-7xl mx-auto px-5 md:px-8 py-12 md:py-16">
+        <a href="index.html" class="inline-flex items-center gap-2 text-sm font-semibold text-sec hover:text-primary">
+          <span class="material-symbols-outlined" aria-hidden="true">arrow_back</span> Retour à l’accueil
+        </a>
+        <p class="mt-8 text-sm font-bold uppercase tracking-[.18em] text-sec">La carte des boissons</p>
+        <h1 class="font-serif font-bold text-primary mt-2">Un voyage dans chaque tasse</h1>
+        <p class="mt-4 max-w-2xl text-mute">Thés parfumés, cafés de caractère et créations fraîches : laissez-vous guider par les saveurs du monde, préparées avec soin et servies tout en douceur.</p>
+      </div>
+    </section>
+
+    <section class="max-w-7xl mx-auto px-5 md:px-8 py-12 md:py-16" aria-labelledby="boissons-title">
+      <div class="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-3 mb-8">
+        <div>
+          <p class="text-sm font-semibold text-sec">À savourer sur place ou à emporter</p>
+          <h2 id="boissons-title" class="font-serif text-primary mt-1">Nos boissons du monde</h2>
+        </div>
+        <p class="text-mute">Des recettes généreuses, aux parfums d’ici et d’ailleurs.</p>
+      </div>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <article class="card flex flex-col">
+          <div class="photo-frame h-56"><img src="https://images.unsplash.com/photo-1544787219-7f47ccb76574?auto=format&amp;fit=crop&amp;w=900&amp;q=85" alt="Thé à la menthe servi dans une théière traditionnelle" class="w-full h-full object-cover" loading="lazy"></div>
+          <div class="p-5 flex flex-col flex-1">
+            <div class="flex justify-between gap-3 items-start"><h3 class="font-serif text-primary">Thé à la menthe Nanah</h3><span class="font-bold text-sec whitespace-nowrap">3,20 €</span></div>
+            <p class="mt-2 text-mute">Thé vert, menthe fraîche et pointe de fleur d’oranger, servi bien chaud.</p>
+          </div>
+        </article>
+        <article class="card flex flex-col">
+          <div class="photo-frame h-56"><img src="https://images.unsplash.com/photo-1576092768241-dec231879fc3?auto=format&amp;fit=crop&amp;w=900&amp;q=85" alt="Tasse de thé fumant aux épices" class="w-full h-full object-cover" loading="lazy"></div>
+          <div class="p-5 flex flex-col flex-1">
+            <div class="flex justify-between gap-3 items-start"><h3 class="font-serif text-primary">Chaï masala</h3><span class="font-bold text-sec whitespace-nowrap">3,80 €</span></div>
+            <p class="mt-2 text-mute">Thé noir infusé au lait, cannelle, cardamome, gingembre et girofle.</p>
+          </div>
+        </article>
+        <article class="card flex flex-col">
+          <div class="photo-frame h-56"><img src="https://images.unsplash.com/photo-1556679343-c7306c1976bc?auto=format&amp;fit=crop&amp;w=900&amp;q=85" alt="Thé vert matcha préparé dans un bol" class="w-full h-full object-cover" loading="lazy"></div>
+          <div class="p-5 flex flex-col flex-1">
+            <div class="flex justify-between gap-3 items-start"><h3 class="font-serif text-primary">Matcha latte</h3><span class="font-bold text-sec whitespace-nowrap">4,20 €</span></div>
+            <p class="mt-2 text-mute">Matcha délicatement fouetté et lait velouté, avec une option végétale.</p>
+          </div>
+        </article>
+        <article class="card flex flex-col">
+          <div class="photo-frame h-56"><img src="https://images.unsplash.com/photo-1511920170033-f8396924c348?auto=format&amp;fit=crop&amp;w=900&amp;q=85" alt="Café espresso fraîchement préparé" class="w-full h-full object-cover" loading="lazy"></div>
+          <div class="p-5 flex flex-col flex-1">
+            <div class="flex justify-between gap-3 items-start"><h3 class="font-serif text-primary">Café de torréfaction locale</h3><span class="font-bold text-sec whitespace-nowrap">2,20 €</span></div>
+            <p class="mt-2 text-mute">Espresso rond et aromatique, à déguster court ou allongé.</p>
+          </div>
+        </article>
+        <article class="card flex flex-col">
+          <div class="photo-frame h-56"><img src="https://images.unsplash.com/photo-1517578239113-b03992dcdd25?auto=format&amp;fit=crop&amp;w=900&amp;q=85" alt="Tasse de chocolat chaud onctueux avec une mousse généreuse" class="w-full h-full object-cover" loading="lazy"></div>
+          <div class="p-5 flex flex-col flex-1">
+            <div class="flex justify-between gap-3 items-start"><h3 class="font-serif text-primary">Chocolat chaud maison</h3><span class="font-bold text-sec whitespace-nowrap">3,90 €</span></div>
+            <p class="mt-2 text-mute">Chocolat noir fondu dans du lait entier, tout simplement réconfortant.</p>
+          </div>
+        </article>
+        <article class="card flex flex-col">
+          <div class="photo-frame h-56"><img src="https://images.unsplash.com/photo-1613478223719-2ab802602423?auto=format&amp;fit=crop&amp;w=900&amp;q=85" alt="Jus frais coloré préparé avec des fruits" class="w-full h-full object-cover" loading="lazy"></div>
+          <div class="p-5 flex flex-col flex-1">
+            <div class="flex justify-between gap-3 items-start"><h3 class="font-serif text-primary">Jus d’orange pressé</h3><span class="font-bold text-sec whitespace-nowrap">3,50 €</span></div>
+            <p class="mt-2 text-mute">Oranges pressées à la minute, sans sucre ajouté.</p>
+          </div>
+        </article>
+        <article class="card flex flex-col">
+          <div class="photo-frame h-56"><img src="https://images.unsplash.com/photo-1534353473418-4cfa6c56fd38?auto=format&amp;fit=crop&amp;w=900&amp;q=85" alt="Smoothie frais aux fruits et aux couleurs vives" class="w-full h-full object-cover" loading="lazy"></div>
+          <div class="p-5 flex flex-col flex-1">
+            <div class="flex justify-between gap-3 items-start"><h3 class="font-serif text-primary">Smoothie mangue-passion</h3><span class="font-bold text-sec whitespace-nowrap">4,50 €</span></div>
+            <p class="mt-2 text-mute">Mangue, fruit de la passion et yaourt, mixés à la commande.</p>
+          </div>
+        </article>
+        <article class="card flex flex-col">
+          <div class="photo-frame h-56"><img src="https://images.unsplash.com/photo-1497534446932-c925b458314e?auto=format&amp;fit=crop&amp;w=900&amp;q=85" alt="Infusion rouge servie dans une tasse" class="w-full h-full object-cover" loading="lazy"></div>
+          <div class="p-5 flex flex-col flex-1">
+            <div class="flex justify-between gap-3 items-start"><h3 class="font-serif text-primary">Bissap glacé signature</h3><span class="font-bold text-sec whitespace-nowrap">3,40 €</span></div>
+            <p class="mt-2 text-mute">Hibiscus, menthe et citron, une recette florale à savourer bien fraîche.</p>
+          </div>
+        </article>
+      </div>
+      <p class="mt-8 text-sm text-mute">Les prix et recettes sont présentés à titre indicatif dans le cadre du projet pédagogique.</p>
+    </section>
+  </main>
+  <div id="site-footer"></div>
+  <script src="script.js"></script>
+  <script>
+    (() => {
+      const destinations = {
+        "Notre salon": "salon.html",
+        "Notre vitrine": "vitrine.html",
+        "Nos boissons": "boissons.html",
+        "Nos recettes": "recette.html"
+      };
+      document.querySelectorAll("#site-header nav a").forEach(link => {
+        const destination = destinations[link.textContent.trim()];
+        if (destination) link.setAttribute("href", destination);
+      });
+    })();
+  </script>
+</body>
+</html>

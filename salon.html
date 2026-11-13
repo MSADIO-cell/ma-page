@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Notre salon de thé – La Tasse des Cousines</title>
+  <meta name="description" content="Visitez le salon de thé La Tasse des Cousines : décoration chaleureuse, tables conviviales, fauteuils et espace enfants.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Material+Symbols+Outlined&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = { theme: { extend: {
+      colors: { primary: "#500009", pc: "#731018", sec: "#8e4e0e", surf: "#fff8f3", s2: "#fff2e2", s3: "#fcebd7", s4: "#f6e6d2", ink: "#221a0e", mute: "#574140", gold: "#ffab66" },
+      fontFamily: { serif: ["Playfair Display", "serif"], sans: ["Plus Jakarta Sans", "sans-serif"] }
+    } } };
+  </script>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body .font-serif { font-family: "Playfair Display", serif; }
+    .photo-frame { overflow: hidden; border-radius: .75rem; }
+    @media (max-width: 639px) {
+      #site-header header > div > a > span:last-child { white-space: nowrap; }
+      #site-header header > div > a > span:last-child b { font-size: 16px; }
+      #site-header header > div > a > span:last-child small { display: none; }
+    }
+  </style>
+</head>
+<body class="bg-surf text-ink font-sans antialiased">
+  <div id="site-header"></div>
+  <main class="pt-20">
+    <section class="bg-s2">
+      <div class="max-w-7xl mx-auto px-5 md:px-8 py-12 md:py-16">
+        <a href="index.html" class="inline-flex items-center gap-2 text-sm font-semibold text-sec hover:text-primary">
+          <span class="material-symbols-outlined" aria-hidden="true">arrow_back</span> Retour à l’accueil
+        </a>
+        <p class="mt-8 text-sm font-bold uppercase tracking-[.18em] text-sec">Bienvenue chez les cousines</p>
+        <h1 class="font-serif font-bold text-primary mt-2">Un lieu chaleureux où l’on se sent chez soi</h1>
+        <p class="mt-4 max-w-2xl text-mute">Poussez la porte d’un salon imaginé pour ralentir : une tasse fumante, des conversations qui s’attardent et de petits coins accueillants pour toute la famille.</p>
+      </div>
+    </section>
+
+    <section class="max-w-7xl mx-auto px-5 md:px-8 py-12 md:py-16" aria-labelledby="salon-title">
+      <div class="grid lg:grid-cols-2 gap-10 lg:gap-14 items-center">
+        <div>
+          <p class="text-sm font-semibold text-sec">L’esprit de la maison</p>
+          <h2 id="salon-title" class="font-serif text-primary mt-2">Un décor pensé pour partager</h2>
+          <p class="mt-4 text-mute">Bois chaleureux, matières douces et touches de bordeaux composent un cadre convivial, inspiré par les voyages et les souvenirs de famille.</p>
+          <p class="mt-4 text-mute">Que vous veniez pour un goûter, une pause lecture ou un moment avec les enfants, chacun trouve sa place autour d’une belle table ou dans un fauteuil confortable.</p>
+          <a href="index.html" class="btn mt-6">Découvrir toute la maison</a>
+        </div>
+        <figure class="photo-frame h-72 sm:h-96 shadow-lg">
+          <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&amp;fit=crop&amp;w=1400&amp;q=85" alt="Vue accueillante de l’intérieur d’un salon de thé" class="w-full h-full object-cover" fetchpriority="high">
+          <figcaption class="sr-only">Un intérieur chaleureux pour se retrouver autour d’un thé.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="bg-s2 py-12 md:py-16" aria-labelledby="galerie-title">
+      <div class="max-w-7xl mx-auto px-5 md:px-8">
+        <div class="max-w-2xl mb-8">
+          <p class="text-sm font-semibold text-sec">Des espaces pour tous les moments</p>
+          <h2 id="galerie-title" class="font-serif text-primary mt-2">Entrez, installez-vous</h2>
+          <p class="mt-3 text-mute">De la grande table aux fauteuils moelleux, chaque détail invite à prolonger la pause.</p>
+        </div>
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <figure class="card">
+            <div class="photo-frame h-60"><img src="https://images.unsplash.com/photo-1559925393-8be0ec4767c8?auto=format&amp;fit=crop&amp;w=1000&amp;q=85" alt="Espace café lumineux avec des tables pour se retrouver" class="w-full h-full object-cover" loading="lazy"></div>
+            <figcaption class="p-5"><h3 class="font-serif text-primary">Les grandes tablées</h3><p class="mt-2 text-mute">Pour partager un goûter, un déjeuner léger ou de belles conversations.</p></figcaption>
+          </figure>
+          <figure class="card">
+            <div class="photo-frame h-60"><img src="https://images.unsplash.com/photo-1442512595331-e89e73853f31?auto=format&amp;fit=crop&amp;w=1000&amp;q=85" alt="Coin café cosy aux couleurs chaudes" class="w-full h-full object-cover" loading="lazy"></div>
+            <figcaption class="p-5"><h3 class="font-serif text-primary">Le coin fauteuils</h3><p class="mt-2 text-mute">Un refuge tranquille pour lire, rêver ou savourer son thé.</p></figcaption>
+          </figure>
+          <figure class="card">
+            <div class="photo-frame h-60"><img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&amp;fit=crop&amp;w=1000&amp;q=85" alt="Salle de restaurant décorée avec soin et lumière douce" class="w-full h-full object-cover" loading="lazy"></div>
+            <figcaption class="p-5"><h3 class="font-serif text-primary">Les détails de la maison</h3><p class="mt-2 text-mute">Bois, lumière douce et petites attentions composent l’atmosphère.</p></figcaption>
+          </figure>
+          <figure class="card">
+            <div class="photo-frame h-60"><img src="https://images.unsplash.com/photo-1493857671505-72967e2e2760?auto=format&amp;fit=crop&amp;w=1000&amp;q=85" alt="Espace de café convivial à la décoration chaleureuse" class="w-full h-full object-cover" loading="lazy"></div>
+            <figcaption class="p-5"><h3 class="font-serif text-primary">Le comptoir gourmand</h3><p class="mt-2 text-mute">Un lieu de passage pour choisir une douceur et échanger avec les cousines.</p></figcaption>
+          </figure>
+          <figure class="card">
+            <div class="photo-frame h-60"><img src="https://images.unsplash.com/photo-1521017432531-fbd92d768814?auto=format&amp;fit=crop&amp;w=1000&amp;q=85" alt="Intérieur de salon avec assises confortables et ambiance paisible" class="w-full h-full object-cover" loading="lazy"></div>
+            <figcaption class="p-5"><h3 class="font-serif text-primary">Une ambiance familiale</h3><p class="mt-2 text-mute">Des espaces où l’on prend le temps, ensemble et sans façon.</p></figcaption>
+          </figure>
+          <figure class="card">
+            <div class="photo-frame h-60"><img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&amp;fit=crop&amp;w=1000&amp;q=85" alt="Salle conviviale aménagée pour accueillir les visiteurs" class="w-full h-full object-cover" loading="lazy"></div>
+            <figcaption class="p-5"><h3 class="font-serif text-primary">Le petit coin des enfants</h3><p class="mt-2 text-mute">Un espace doux pour jouer et feuilleter des livres pendant le goûter.</p></figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="max-w-7xl mx-auto px-5 md:px-8 py-12 md:py-16">
+      <div class="card bg-s3 p-6 md:p-10 flex flex-col md:flex-row md:items-center md:justify-between gap-6">
+        <div><p class="text-sm font-semibold text-sec">À bientôt autour d’une tasse ?</p><h2 class="font-serif text-primary mt-2">Votre prochaine pause commence ici</h2><p class="mt-3 text-mute">Retrouvez-nous au cœur de Nantes pour un moment tout en douceur.</p></div>
+        <a href="contact.html" class="btn shrink-0">Nous contacter</a>
+      </div>
+    </section>
+  </main>
+  <div id="site-footer"></div>
+  <script src="script.js"></script>
+  <script>
+    (() => {
+      const destinations = {
+        "Notre salon": "salon.html",
+        "Notre vitrine": "vitrine.html",
+        "Nos boissons": "boissons.html",
+        "Nos recettes": "recette.html"
+      };
+      document.querySelectorAll("#site-header nav a").forEach(link => {
+        const destination = destinations[link.textContent.trim()];
+        if (destination) link.setAttribute("href", destination);
+      });
+    })();
+  </script>
+</body>
+</html>
